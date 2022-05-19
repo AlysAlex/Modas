@@ -1,0 +1,302 @@
+* {
+    box-sizing: border box;
+    padding: 0;
+    margin: 0;
+    position: none;
+    border: 0;
+    display: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-left: 4.8rem;
+    margin-right: 4.8rem;
+    max-width: 500.4rem;
+    width: auto;
+}
+
+/* estilos de titulos y parrafos*/
+
+.titulo_1 {
+    font-family: 'Pangolin', cursive;
+    font-size: 3.5rem;
+    color: #111;
+    font-weight: 500;
+    /* esto no es parte del estilo de la letra pero no importa porque solo uso este estilo de letra una vez */
+    position: relative;
+    right: 3rem;
+}
+
+.titulo_2 {
+    font-family: 'Kreon', serif;
+    font-size: 3.2rem;
+    color: #111;
+    font-weight: 525;
+    /* esto no es parte del estilo de letra pero como solo uso el titulo una vez no importa */
+    margin-bottom: 2rem;
+    position: relative;
+    left: 3rem;
+    
+}
+
+.titulo_3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.9rem;
+    font-size: 5rem;
+    font-family: 'Passion One', Arial, Helvetica, sans-serif;
+}
+
+.parrafo_1 {
+    font-family: 'Kreon', serif;;
+    font-size: 1.5rem;
+    color: #111;
+}
+
+.parrafo_2 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.6rem;
+}
+
+.parrafo_3 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.6rem;
+    color: rgb(146, 143, 129);
+}
+
+/* estilos de botones */
+
+button {
+    height: 3rem;
+    border-radius: 1.5rem;
+    padding-top: 0.45rem;
+    padding-bottom: 0.45rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.buttonBlack {
+    background-color: black;
+    color: white;
+}
+
+.botonesJuntos {
+    display: inline-block;
+    /* Este estilo lo usa para dos botones que vayan a ir uno al lado del otro */
+}
+
+/* estilosItems */
+
+.items_1 {
+    margin: 3.5rem;
+    width: 90%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.items_2 {
+    margin-top: 1.5rem;
+}
+
+/* a partir de aquí comienza la primera cuadrilla */
+
+.cuadrilla_1 {
+    display: grid;
+    grid-template-columns: repeat(2, 62.8rem);
+    grid-template-rows: 21.7rem 21.2rem 21.5rem;
+    grid-template-areas: "cuadrilla_1 cuadrilla_3"
+                         "cuadrilla_1 cuadrilla_2"
+                         "cuadrilla_4 cuadrilla_4";
+    /* Este grid grid-template-areas lo coloco para que mi código sea más fácil de leer para otros programadores, no es necesario */
+}
+
+.casilla_1 {
+    width: 100%;
+    height: 100%;
+    grid-area: 1 / 1 / 3 / 3;
+    background-image: url("images/semanamoda.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.casilla_2 {
+    width: 100%;
+    height: 100%;
+    grid-area: 2 / 2 / 2 / 3;
+    background-image: url("images/maniquis.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.casilla_3 {
+    background-color: rgb(248, 248, 236);
+    grid-area: 1 / 2 / 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    -webkit-box-shadow: inset 0px -12px 69px -17px rgba(70, 70, 143, 0.46);
+    -moz-box-shadow: inset 0px -12px 69px -17px rgba(70, 70, 143, 0.46);
+    box-shadow: inset 0px -12px 69px -17px rgba(70, 70, 143, 0.46); 
+}
+
+.casilla_3 p {
+    color: rgb(71, 67, 67);
+    font-weight: 600;
+}
+
+.casilla_4 {
+    grid-area: 3 / 1 / 3 / 3;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.casilla_4 p {
+    margin-bottom: 3rem;
+}
+
+.casilla_4 button {
+    margin-bottom: 2.5rem;
+}
+
+.items_1 p {
+    color: rgb(255, 255, 255);
+    margin: 2.7rem 2.7rem 0px 0px;
+}
+
+/* a aprtir de aqui comienza la segunda cuadrilla */
+
+.cuadrilla_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 62rem);
+    grid-template-rows: 3rem 45rem auto;
+    grid-template-areas: "cuadrilla_12 cuadrilla_12"
+                         "cuadrilla_22 cuadrilla_32"
+                         "cuadrilla_42 cuadrilla_52";
+    margin-bottom: 4.5rem;
+    gap: 7px;
+}
+
+.casilla_12 {
+    grid-area: 1 / 1 / 1 / 3;
+}
+
+.casilla_22 {
+    grid-area: 2 / 1 / 2 / 2;
+    background-image: url(images/stellaStrongFall2.jpg);
+    background-size: cover;
+}
+
+.casilla_32 {
+    grid-area: 2 / 2 / 2 / 3;
+    background-image: url(images/deportiva.jpeg);
+    background-size: cover;
+}
+
+.casilla_42 {
+    grid-area: 3 / 1 / 3 / 2;
+    display: flex;
+    align-items: flex-start;
+    justify-items: flex-start;
+    height: 100%;
+    width: 100;
+    border-right: 3px solid white;
+}
+
+.casilla_52 {
+    grid-area: 3 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
+    height: 100%;
+    width: 100;
+    border-left: 3px solid white;
+}
+
+.items_2 p {
+    margin-bottom: 1rem;
+}
+
+/* a partir de aqui comienza la tercera cuadrilla */
+
+.cuadrilla_3 {
+    display: grid;
+    grid-template-columns: repeat(5, 24.3rem);
+    grid-template-rows: 3rem 44rem 10rem;
+    grid-template-areas: "cuadrilla_13 cuadrilla_13 cuadrilla_13 cuadrilla_13 cuadrilla_13"
+                         "cuadrilla_23 cuadrilla_33 cuadrilla_43 cuadrilla_53 cuadrilla_63"
+                         "cuadrilla_73 cuadrilla_83 cuadrilla_93 cuadrilla_103 cuadrilla_113";
+    gap: 7px;
+}
+
+.casilla_13 {
+    grid-area: 1 / 1 / 1 / 6;
+}
+
+.casilla_23 {
+    grid-area: 2 / 1 / 2 / 2;
+    background-image: url(images/outfitGris.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.casilla_33 {
+    grid-area: 2 / 2 / 2 / 3;
+    background-image: url(images/jovenModelo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.casilla_43 {
+    grid-area: 2 / 3 / 2 / 4;
+    background-image: url(images/mujerElegante.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.casilla_53 {
+    grid-area: 2 / 4 / 2 / 5;
+    background-image: url(images/vestidoEstampado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.casilla_63 {
+    grid-area: 2 / 5 / 2 / 6;
+    background-image: url(images/bichiyal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.casilla_73 {
+    grid-area: 3 / 1 / 3 / 2;
+}
+
+.casilla_83 {
+    grid-area: 3 / 2 / 3 / 3;
+}
+
+.casilla_93 {
+    grid-area: 3 / 3 / 3 / 4;
+}
+
+.casilla_103 {
+    grid-area: 3 / 4 / 3 / 5;
+}
+
+.casilla_113 {
+    grid-area: 3 / 5 / 3 / 6;
+}
